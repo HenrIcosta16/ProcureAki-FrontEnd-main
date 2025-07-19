@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%; 
+    width: 100%; 
+  }
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+.col-md-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%; 
+    width: 100%; 
+    margin: 0 auto;
+  }
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+  width: 400px; 
+  height: auto; 
+  height: 400px; 
+  position: absolute; 
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 0; 
+  object-fit: cover; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-body {
+  padding: 20px;
+  background-color: transparent; 
+  position: relative; 
+  z-index: 1;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif; 
+  font-weight: 500; 
+  font-size: 50px; 
+  line-height: 100%; 
+  letter-spacing: 0%; 
+  height: 200px; 
+
+
+.row.justify-content-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.col-md-5 {
+  flex: 1;
+  max-width: 45%;
+  margin: 10px 0;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
+  position: relative; /* Garantir que o texto fique sobre a imagem */
+  z-index: 2; /* Para garantir que o texto apareça acima da imagem */
+  font-size: 30px;
+  line-height: 1.6; /* Melhora a leitura no card */
+  
+}
+
+/*.container {
+  max-width: 1200px;
+}*/
+
+@media (max-width: 768px) {
+  .col-md-5 {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-text {
+    font-size: 1.3rem; /* Ajusta o tamanho da fonte em telas menores */
+  }
+
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar os cards */
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Efeito de hover para aumentar o card */
+  }
+  
+  /* Ajusta a altura dos cards para mais conteúdo */
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    line-height: 1.6; /* Melhora a leitura no card */
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Colunas de layout flexível para cards */
+  .row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .col-md-5 {
+    flex: 1;
+    max-width: 45%;
+    margin: 10px 0;
+  }
+  
+  /* Imagem dentro dos cards */
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  /* Cards na parte inferior */
+.container.mt-5 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+  /* Ajustes de responsividade */
+  @media (max-width: 768px) {
+    .col-md-5 {
+      max-width: 100%; /* Coloca os cards em linha vertical em telas menores */
+    }
+  }
+  
+}
+}

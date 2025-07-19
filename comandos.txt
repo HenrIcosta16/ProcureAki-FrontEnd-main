@@ -1,0 +1,11 @@
+#touch Dockerfile   cria o dockerfile
+
+ nano Dockerfile
+
+ ls -l Dockerfile
+
+-rw-rw-r-- 1 henrique henrique 678 jul 17 19:21 Dockerfile
+
+ docker build -t minha-aplicacao .
+
+docker run -d -p 80:80 minha-aplicacao

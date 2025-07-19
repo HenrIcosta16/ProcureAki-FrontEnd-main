@@ -1,0 +1,101 @@
+body, html {
+  overflow-x: hidden; /* Desabilita o rolamento horizontal */
+  width: 100%; /* Garante que o conteúdo não ultrapasse a largura da tela */
+}
+
+
+
+
+
+/* Estilo para as imagens do carrossel */
+.carousel-item img {
+  width: 100%;
+  height: 1000px; /* Ajuste a altura das imagens conforme necessário */
+  object-fit: cover; /* Garante que a imagem cubra toda a área do carrossel */
+}
+
+/* Estilo geral para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9; /* Cor de fundo clara */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da tela */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Garante que o corpo da página ocupe toda a altura da janela */
+}
+
+/* Container principal que envolve todo o conteúdo */
+#home {
+  max-width: 1200px; /* Limita a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 30px; /* Espaçamento interno */
+  flex-grow: 1; /* Faz o container crescer conforme necessário */
+  min-height: 100%; /* Faz o container ocupar toda a altura disponível */
+}
+
+/* Estilo para o carrossel */
+.carousel {
+  margin-bottom: 30px; /* Adiciona espaço abaixo do carrossel */
+  height: 100%; /* Faz o carrossel ocupar a altura total da área disponível */
+}
+
+/* Estilo para as legendas do carrossel */
+.carousel-caption {
+  font-size: 18px; /* Tamanho de fonte reduzido para uma melhor adaptação */
+  text-align: center; /* Alinha o texto da legenda ao centro */
+  background-color: rgba(0, 0, 0, 0.5); /* Adiciona um fundo transparente para melhor legibilidade */
+  padding: 20px; /* Espaçamento na legenda */
+  border-radius: 8px;
+  color: #fff; /* Cor branca para o texto */
+}
+
+/* Seção de Procuraakisection */
+.Procuraakisection {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #fff; /* Fundo branco para destacar a seção */
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 600px; /* Garantir que a seção tenha uma altura mínima */
+}
+
+/* Container geral */
+.container {
+  max-width: 1200px;
+  margin-top: -10px; /* Espaço extra na parte superior */
+  padding-bottom: 50px; /* Espaço extra na parte inferior */
+}
+
+/* Ajuste de altura para cards e outros elementos */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para os cards */
+  margin-bottom: 20px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+  min-height: 400px; /* importante, Garantir que os cards tenham altura mínima */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.6; /* Melhorar a leitura */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .col-md-5 {
+    max-width: 100%; /* Coloca os cards em linha vertical em telas menores */
+  }
+
+  .carousel-item img {
+    height: 500px; /* Ajusta a altura da imagem do carrossel para telas menores */
+  }
+}
